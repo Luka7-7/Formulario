@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
@@ -14,7 +15,7 @@
       <div class="field">
         <label class="label">Nombre</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="Text input" value="" id="user">
+          <input class="input is-success" type="text" placeholder="Text input" value="" id="user" required>
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -27,7 +28,7 @@
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger" type="email" placeholder="Email input" value="" id="email">
+          <input class="input is-danger" type="email" placeholder="Email input" value="" id="email" required>
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -55,7 +56,7 @@
       <div class="field">
         <label class="label">Introduzca su review</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Review" id="review"></textarea>
+          <textarea class="textarea" placeholder="Review" id="review" required></textarea>
         </div>
       </div>
       
@@ -73,7 +74,7 @@
           <button class="button is-primary is-dark" onclick="enviar()" type="submit">Enviar</button>
         </div>
         <div class="control">
-          <button class="button is-danger is-dark">Cancelar</button>
+          <button class="button is-danger is-dark" onclick="Cancelar()">Cancelar</button>
         </div>
       </div>
 
