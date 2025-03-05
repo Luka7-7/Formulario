@@ -1,7 +1,19 @@
 :root {
-    --bulma-primary-h: 314deg;
-    --bulma-link-l: 21%;
-    --bulma-info-h: 298deg;
-    --bulma-warning-l: 61%;
-    --bulma-danger-l: 59%;
-  }
+  --bulma-primary-h: 314deg;
+  --bulma-link-l: 21%;
+  --bulma-info-h: 298deg;
+  --bulma-warning-l: 61%;
+  --bulma-danger-l: 59%;
+}
+
+input:required:invalid {
+  border: 2px solid var(--bulma-danger-l);
+  background-color: #ffe6e6;
+  color: black;
+}
+
+input:required:valid {
+  border: 2px solid var(--bulma-info-h);
+  background-color: #e6ffe6;
+  color: black;
+}
